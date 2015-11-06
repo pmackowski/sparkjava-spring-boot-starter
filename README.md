@@ -1,5 +1,4 @@
 # spring-boot-spark-java
-==============================================
 
 Project is currently not available in a public Maven repository.
 

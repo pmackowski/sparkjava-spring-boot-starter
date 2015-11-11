@@ -1,4 +1,4 @@
-# spring-boot-spark-java
+# sparkjava-spring-boot-starter
 
 Project is currently not available in a public Maven repository.
 
@@ -10,8 +10,8 @@ add following dependency:
 
 ```xml
     <dependency>
-        <groupId>pl.coffeecode.springboot</groupId>
-        <artifactId>spring-boot-spark-java</artifactId>
+        <groupId>pl.coffeecode.boot</groupId>
+        <artifactId>sparkjava-spring-boot-starter</artifactId>
         <version>1.0</version>
     </dependency>
 ```
@@ -23,10 +23,12 @@ Getting started
 import static spark.Spark.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import pl.coffeecode.springboot.spark.Spark;
+import pl.coffeecode.boot.sparkjava.Spark;
 
 @Component
+@Order(value=1)
 public class HelloSpark implements Spark {
 
     @Autowired
